@@ -1,0 +1,134 @@
+:root{
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(217, 12%, 63%);
+  --medium-gray: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --overpass: 'Overpass';
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box
+}
+
+body{
+  background: var(--very-dark-blue);
+  font-family: var(--overpass);
+  font-size: 15px;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+h1{
+  color: var(--white);
+  font-weight: 700;
+}
+
+p{
+  color: var(--light-gray)
+}
+
+a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+.container{
+  width: 425px;
+  max-width: 100%;
+  background: var(--dark-blue);
+  display: block;
+  margin: 150px auto;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.final-result{
+  display: none;
+}
+
+.rating img{
+  width: 35px;
+  background: var(--medium-gray);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.rating h1, p, div{
+  margin: 10px 0;
+}
+
+.rating p{
+  line-height: 1.5;
+}
+
+.rating-number span{
+  display: inline-block;
+  width: 40px;
+  background: var(--very-dark-blue);
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px 0px;
+  margin-left: 25px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.rating-number span:hover{
+  background: var(--medium-gray);
+}
+
+.rating-number span:active{
+  background: var(--orange);
+}
+
+.active{
+  background: var(--orange) !important;
+}
+
+.button{
+  background: var(--orange);
+  width: 85%;
+  display: block;
+  margin: 20px auto 0px auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.button:hover{
+  background: var(--white);
+  color: var(--orange);
+}
+
+.final-result img{
+  margin: 0 auto !important;
+}
+
+.final-result span{
+  display: block;
+  color: var(--orange);
+  background: var(--very-dark-blue);
+  width: 170px;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.final-result img, span, h1, p{
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.attribution{
+  color: #fff;
+  text-align: center;
+}
